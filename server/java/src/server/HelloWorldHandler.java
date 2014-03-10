@@ -1,10 +1,14 @@
+package server;
+
 import org.apache.thrift.TException;
+import thrift.HelloWorld;
+import thrift.Person;
 
 /**
  * User: cyberroadie
  * Date: 10/03/2014
  */
-public class HelloWorldHandler implements  HelloWorld.Iface {
+public class HelloWorldHandler implements HelloWorld.Iface {
 
     @Override
     public String getGreeting(Person person) throws TException {
